@@ -45,17 +45,3 @@ mean_cov_comp <- function(Daily_Return,la) {
 
   return(result)
 }
-
-# 사용 방법..?
-mu <- mean_cov_comp(RR)$
-cov <- mean_cov_comp(RR)$Covariance_matrix
-
-
-
-
-
-
-
-
-
-
