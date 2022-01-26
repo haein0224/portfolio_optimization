@@ -16,3 +16,4 @@
 ![image](https://user-images.githubusercontent.com/84130229/151176984-db147671-5043-4c00-8f6a-00bcd9ffbad7.png)
 
 0124의 문제점을 해결한 부분 ) lambda sequence를 짤때 그냥 seq function을 사용하는게 아니라 lseq를 사용했어야함!! log-spaced lambda를 얻는것이 필요했으므로
+새로운 문제가 발견된 부분 ) 현재 목표가 논문의 시뮬레이션과 같은 결과를 도출하는 것이기때문에 초기값이 0124처럼 고른 분포를 보여야하며,람다값에는 차이가 없는데 초기값이 다르게 나왔다는 것은 다른 파라미터의 문제인지 유의할 필요가 있음
