@@ -23,10 +23,9 @@
 ### 0127 - 시뮬결과 이미지
 ![image](https://user-images.githubusercontent.com/84130229/151315965-a05871b2-7a01-48e0-8220-7962fd4f33bd.png)
 
-   논문에서의 결과와 거의 유사(tuning parameter 값이 있기 때문에 완벽히 같은 결과는 불가를 예상..) !   
-   THETA : 1번째 iteration의 각 weight values' range를 결정   
-   상대위험회피계수 높을 수록 위험을 기피한다는 뜻이므로, 너무 큰 값의 매수나 매도가 발생하지 않음..?   
-   eta : 수렴하는 속도를 조절 : eta값이 클수록 더 큰 람다가 주어져야 그룹화 되는 양상ㅇ   
-   오늘 목표 :    
-   1) 실제 데이터에는 eta = 1.5로 고정하고, theta value를 계산할 수 있는 수식이 있을지 더 develope
-   2) 실제로 섹터가 나뉘어있던 데이터를 기반으로 해보기,,(SGLasso 논문 참고)
+논문에서의 결과와 거의 유사(tuning parameter 값이 있기 때문에 완벽히 같은 결과는 불가를 예상..) !   
+THETA : 1번째 iteration의 각 weight values' range를 결정 - 상대위험회피계수 높을 수록 위험을 기피한다는 뜻이므로, 너무 큰 값의 매수나 매도가 발생하지 않음..?   
+ETA : 수렴하는 속도를 조절 : eta값이 클수록 더 큰 람다가 주어져야 그룹화 되는 양상ㅇ   
+오늘 목표 :    
+1) 실제 데이터에는 eta = 1.5로 고정하고, theta value를 계산할 수 있는 수식이 있을지 더 develope
+2) 실제로 섹터가 나뉘어있던 데이터를 기반으로 해보기,,(SGLasso 논문 참고)
