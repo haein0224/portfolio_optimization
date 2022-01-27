@@ -22,7 +22,9 @@
 
 ### 0127 - 시뮬결과 이미지
 ![image](https://user-images.githubusercontent.com/84130229/151315965-a05871b2-7a01-48e0-8220-7962fd4f33bd.png)
+![KakaoTalk_Photo_2022-01-27-17-58-18](https://user-images.githubusercontent.com/84130229/151325774-9753cca4-e7bf-417a-836e-458e1932a30d.png)
 
+위) 시뮬 결과 / 아래) 논문 상 시뮬결과
 논문에서의 결과와 거의 유사(tuning parameter 값이 있기 때문에 완벽히 같은 결과는 불가를 예상..) !   
 THETA : 1번째 iteration의 각 weight values' range를 결정 - 상대위험회피계수 높을 수록 위험을 기피한다는 뜻이므로, 너무 큰 값의 매수나 매도가 발생하지 않음..?   
 ETA : 수렴하는 속도를 조절 : eta값이 클수록 더 큰 람다가 주어져야 그룹화 되는 양상ㅇ   
