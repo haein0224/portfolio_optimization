@@ -29,3 +29,9 @@ ETA : 수렴하는 속도를 조절 : eta값이 클수록 더 큰 람다가 주�
 오늘 목표 :    
 1) 실제 데이터에는 eta = 1.5로 고정하고, theta value를 계산할 수 있는 수식이 있을지 더 develope
 2) 실제로 섹터가 나뉘어있던 데이터를 기반으로 해보기,,(SGLasso 논문 참고)
+
+
+#### 0129 
+https://bioinformaticsandme.tistory.com/145   
+연구보고할때는 예시로 그룹화가 어떻게 이뤄지는지 특정람다에서 보여드리고자함   
+이때 hierchical clustering으로 거리에 따라 그룹화하고 적당한 개수에서 나뉘는것을 보여드리면 될듯함
