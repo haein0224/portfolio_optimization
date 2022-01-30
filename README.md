@@ -35,3 +35,7 @@ ETA : 수렴하는 속도를 조절 : eta값이 클수록 더 큰 람다가 주�
 https://bioinformaticsandme.tistory.com/145   
 연구보고할때는 예시로 그룹화가 어떻게 이뤄지는지 특정람다에서 보여드리고자함   
 이때 hierchical clustering으로 거리에 따라 그룹화하고 적당한 개수에서 나뉘는것을 보여드리면 될듯함
+
++) 추가로 0127 파일을 다시 돌린 결과 논문상의 시뮬레이션과 더 유사한 그래프를 얻음!  
+![image](https://user-images.githubusercontent.com/84130229/151700589-135982b5-2ffc-4d67-9da3-ddc0faa79f97.png).  
+시뮬레이션 데이터는 동일, theta : 40 , eta : 1.5 사용 / 수직 선은 long only 구역을 말함
