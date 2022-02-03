@@ -39,3 +39,11 @@ https://bioinformaticsandme.tistory.com/145
 +) 추가로 0127 파일을 다시 돌린 결과 논문상의 시뮬레이션과 더 유사한 그래프를 얻음!  
 ![image](https://user-images.githubusercontent.com/84130229/151700679-ba5f806c-ea9a-48ea-9edb-9ccb7149239b.png).   
 시뮬레이션 데이터는 동일, theta : 40 , eta : 1.5 사용 / 수직 선은 long only 구역을 말함
+
+#### 0202 - dandogram을 그룹화 시각화
+0에 아주아주 가깝지만 0이 아닌 weight을 갖는 경우 0으로 처리해, long-only 구역이 더욱 명확해 지도록함.
+![image](https://user-images.githubusercontent.com/84130229/152264930-1a6d08b8-965e-463f-ad2f-3b9ee6a15226.png) 
+
+<hierchical clustering 결과> - 거리 측정 옵션은 euclidean을 클러스터링 기준은 single으 사용(그룹간 최소 거리를 기준으로 함 : 평균을 써야하나..?흠)
+![image](https://user-images.githubusercontent.com/84130229/152264948-e96feccd-aa5d-4e76-90fd-fbe58f094712.png)   
+
