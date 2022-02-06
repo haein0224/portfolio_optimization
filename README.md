@@ -38,7 +38,7 @@ https://bioinformaticsandme.tistory.com/145
 
 +) 추가로 0127 파일을 다시 돌린 결과 논문상의 시뮬레이션과 더 유사한 그래프를 얻음!  
 ![image](https://user-images.githubusercontent.com/84130229/151700679-ba5f806c-ea9a-48ea-9edb-9ccb7149239b.png).   
-시뮬레이션 데이터는 동일, theta : 40 , eta : 1.5 사용(eta값은 그림에서 잘못 표시됨) / 수직 선은 long only 구역을 말함
+시뮬레이션 데이터는 동일, theta : 40 , eta : 10 / 수직 선은 long only 구역을 말함
 
 #### 0202 - dandogram을 그룹화 시각화
 0에 아주아주 가깝지만 0이 아닌 weight을 갖는 경우 0으로 처리해, long-only 구역이 더욱 명확해 지도록함.
