@@ -24,10 +24,10 @@
 ![image](https://user-images.githubusercontent.com/84130229/151315965-a05871b2-7a01-48e0-8220-7962fd4f33bd.png)
 
 논문에서의 결과와 거의 유사(tuning parameter 값이 있기 때문에 완벽히 같은 결과는 불가를 예상..) !   
-THETA : 1번째 iteration의 각 weight values' range를 결정 - 상대위험회피계수 높을 수록 위험을 기피한다는 뜻이므로, 너무 큰 값의 매수나 매도가 발생하지 않음..?   
+PHI : 1번째 iteration의 각 weight values' range를 결정 - 상대위험회피계수 높을 수록 위험을 기피한다는 뜻이므로, 너무 큰 값의 매수나 매도가 발생하지 않음..?   
 ETA : 수렴하는 속도를 조절 : eta값이 클수록 더 큰 람다가 주어져야 그룹화 되는 양상ㅇ   
 오늘 목표 :    
-1) 실제 데이터에는 eta = 1.5로 고정하고, theta value를 계산할 수 있는 수식이 있을지 더 develope
+1) 실제 데이터에는 eta = 1.5로 고정하고, phi value를 계산할 수 있는 수식이 있을지 더 develope
 2) 실제로 섹터가 나뉘어있던 데이터를 기반으로 해보기,,(SGLasso 논문 참고)
 
 
@@ -38,12 +38,9 @@ https://bioinformaticsandme.tistory.com/145
 
 +) 추가로 0127 파일을 다시 돌린 결과 논문상의 시뮬레이션과 더 유사한 그래프를 얻음!  
 ![image](https://user-images.githubusercontent.com/84130229/151700679-ba5f806c-ea9a-48ea-9edb-9ccb7149239b.png).   
-시뮬레이션 데이터는 동일, theta : 40 , eta : 10 / 수직 선은 long only 구역을 말함
+시뮬레이션 데이터는 동일, phi : 40 , eta : 10 / 수직 선은 long only 구역을 말함
 
-#### 0202 - dandogram을 그룹화 시각화
-0에 아주아주 가깝지만 0이 아닌 weight을 갖는 경우 0으로 처리해, long-only 구역이 더욱 명확해 지도록함.
-![image](https://user-images.githubusercontent.com/84130229/152264930-1a6d08b8-965e-463f-ad2f-3b9ee6a15226.png) 
-
-<hierchical clustering 결과> - 거리 측정 옵션은 euclidean을 클러스터링 기준은 single으 사용(그룹간 최소 거리를 기준으로 함 : 평균을 써야하나..?흠)
-![image](https://user-images.githubusercontent.com/84130229/152264948-e96feccd-aa5d-4e76-90fd-fbe58f094712.png)   
-
+#### 0214
+threshold : 0.005%로 언급하고 있어 5번째 자리까지 사용(반올림)   
+연구보고용은 phi = 40, eta = 15로 고정 -> 추후에 교수님께 조언 구하고자함   
+mission : 논문 다시 읽어보고 빠진 부분있는지 catch up하기!
