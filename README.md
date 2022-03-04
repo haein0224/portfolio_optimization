@@ -44,3 +44,7 @@ https://bioinformaticsandme.tistory.com/145
 threshold : 0.005%로 언급하고 있어 5번째 자리까지 사용(반올림)   
 연구보고용은 phi = 40, eta = 15로 고정 -> 추후에 교수님께 조언 구하고자함   
 mission : 논문 다시 읽어보고 빠진 부분있는지 catch up하기!
+
+#### 0304
+what's going on now : mean-shortfall + SLOPE combining
+writing optimization problem is my mission,,
