@@ -48,3 +48,9 @@ mission : 논문 다시 읽어보고 빠진 부분있는지 catch up하기!
 #### 0304
 what's going on now : mean-shortfall + SLOPE combining
 writing optimization problem is my mission,,
+
+#### 0317
+I solved the optimization problem applying ADMM Algorithm on mean-shortfall + SLOPE
+But still there are so many stuffs to be solved
+e.g. grouping effect is not that obvious than my expection,,
+I'm gonna recalculate the stopping rule and upgrade my algorithm's converging speed!
