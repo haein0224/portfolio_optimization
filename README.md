@@ -54,3 +54,8 @@ I solved the optimization problem applying ADMM Algorithm on mean-shortfall + SL
 But still there are so many stuffs to be solved
 e.g. grouping effect is not that obvious than my expection,,
 I'm gonna recalculate the stopping rule and upgrade my algorithm's converging speed!
+
+
+#### 0320
+result from applying simulation data on the mean-shortfall + SLOPE !
+![image](https://user-images.githubusercontent.com/84130229/159166378-8d56c676-4b54-4cb9-a379-eff45c5a8dcf.png)
