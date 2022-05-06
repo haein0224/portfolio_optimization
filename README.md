@@ -59,3 +59,7 @@ I'm gonna recalculate the stopping rule and upgrade my algorithm's converging sp
 #### 0320
 result from applying simulation data on the mean-shortfall + SLOPE !
 ![image](https://user-images.githubusercontent.com/84130229/159166378-8d56c676-4b54-4cb9-a379-eff45c5a8dcf.png)
+
+#### 0506
+Recently, working on applying SLOPE on DOW30 real data.  
+Prameter setting is the difficulitiest part.....!
