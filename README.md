@@ -1,4 +1,4 @@
-# let-s_go_graduation
+# Portfolio Selection via Shortfall+SLOPE
 연구보고 archive : https://www.notion.so/c26577b9d19942e8a7f3ca868d50b629?v=b8de0316fced46a5aac8e2efb3bf051d 💻✔️
 
 
