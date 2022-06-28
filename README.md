@@ -1,6 +1,6 @@
 # Portfolio Selection via Shortfall+SLOPE
-연구보고 archive : https://www.notion.so/c26577b9d19942e8a7f3ca868d50b629?v=b8de0316fced46a5aac8e2efb3bf051d 💻✔️
-
+연구보고 archive : https://www.notion.so/c26577b9d19942e8a7f3ca868d50b629?v=b8de0316fced46a5aac8e2efb3bf051d 💻✔️. 
+SLOPE 중요한 코드 : https://candes.su.domains/software/SortedL1/software.html (from Statistical Estimation and Testing via the Sorted L1 Norm, M. Bogdan et al.)
 
 ### 0124 시뮬결과 이미지
 ![image](https://user-images.githubusercontent.com/84130229/150819872-f112401c-a96d-47a9-93be-f21ff93f141f.png)
