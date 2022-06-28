@@ -1,5 +1,5 @@
 ## mean-variance portfolio ##
-
+# 6월 28일 메모 : mean_cov_comp 함수 정의와 관련된 행렬 사이즈 체크 필요함
 
 
 ########## 데이터 준비
@@ -35,11 +35,11 @@ t0 <- proc.time()[3] # 시간 측정
 for (month in 1:lenmonth) {
   end <- start+window-1
   
-  mu <- as.vector(mean_cov_comp(daily_return[,1:ncol(base)])$Mean)
-  sigma <- mean_cov_comp(daily_return[,1:ncol(base)])$Covariance_matrix
-  la <- mean_cov_comp(daily_return[,1:ncol(base)])$la
+  mu <- as.vector(mean_cov_comp(daily_return[start:end,])$Mean) # 함수꼴 다시 확인할 필요 있음
+  sigma <- mean_cov_comp(daily_return[start:end,])$Covariance_matrix
+  la <- mean_cov_comp(daily_return[start:end,])$la
   
-  ww <- foreach(lambda=iter(lambda, by='column'), .combine=cbind,.packages = c("quadprog","CVXR")) %dopar% { #, .export=c("proxSortedL1", "proxZ")) %dopar% { #, .combine=cbind) {
+  ww <- foreach(lambda=iter(lambda, by='column'), .combine=cbind) %dopar% { #, .export=c("proxSortedL1", "proxZ")) %dopar% { #, .combine=cbind) {
     dyn.load('~/Desktop/portfolio_selection/SLOPE_code/cproxSortedL1.so')
     alpha <- rep(0, p)
     beta <- 0
@@ -96,22 +96,21 @@ for (month in 1:lenmonth) {
   return_lasso <- N_daily_return[-ncol(data1)]%*%round(ww[,ncol(ww)],2)
   idx <- N_daily_return[ncol(data1)]
   ew <- N_daily_return[-ncol(data1)]%*%rep(1/p, p) # equally weighted portfolio mean return
-    
+  
   results <- rbind(results, c(month, w_idx, return_30))#, return_17, return_lasso, idx, ew))
   results_30[month,] <- round(ww[,w_idx],2)
   results_w_17[month,] <- round(ww[,17],2)
   results_w_las[month,] <- round(ww[,31],2)
-    
-    
+  
   #######  진행상황 및 grouping 확인용 
   if (month%%12 == 0) {
     print(paste(month*100/lenmonth,"%")) # 진행상황 확인
-      
+    
     # 시각화
     real_viz(ww[,-ncol(ww)], month, w_idx)
     abline(v=w_idx, col="blue")
     abline(v=17,col='red', lty=2)
-      
+    
   }
     
     ###### 다음으로 넘어가기 위한 작업
